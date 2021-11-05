@@ -1,0 +1,303 @@
+/* Importing Font Family  */
+@import url("./font.css");
+/* Creating Variables */
+:root {
+  /*  Theme colors */
+  --text-grey: #3f4954;
+  --text-light: #686666da;
+  --bg-color: #0f0f0f;
+  --white: #ffffff;
+  --midnight: #104f55;
+  /* Gradient color */
+  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  /* font family */
+  --Abril: "Abril", "cursive";
+  --Crete: "Crete", "bold";
+  --Fredoka: "Fredoka", "bold";
+}
+
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+/* --------------------------Global Classes-------------------------- */
+a {
+  text-decoration: none;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ul {
+  list-style-type: none;
+}
+h1 {
+  font-family: var(--Crete);
+  font-size: 2.7rem;
+}
+h3 {
+  font-family: var(--Abril);
+  font-size: 1.5rem;
+}
+button.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+span {
+  font-family: var(--Fredoka);
+}
+.text-grey{
+  color: var(--text-grey);
+}
+
+/* -------------xxx----------Global Classes-----------xxx------------ */
+
+/* ---------------------------Navigation Bar---------------------------------- */
+.nav {
+  background-color: white;
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 14vh;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+
+.nav-brand img{
+  display: flex;
+  width: 150px;
+  margin: 0px 0px;
+  padding: 0 0px;
+  align-self: auto;
+}
+.nav-link {
+  padding: 2rem 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  font-family: var(--Crete);
+}
+.nav-link:hover {
+  background-color: var(--midnight);
+}
+.nav-link:hover a {
+  color: var(--white);
+}
+.social i {
+  size: 25px;
+  padding: 0 0.5rem;
+}
+.social i:hover {
+  color: #c4d4ec;
+}
+.collapse {
+  height: 40rem;
+}
+.toggle-collapse {
+  position: absolute;
+  top: 0%;
+  width: 80%;
+  cursor: pointer;
+  display: none;
+}
+.toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.8rem 1rem;
+}
+.toggle-icons i {
+  font-size: 1.4rem;
+  color: var(--text-grey);
+}
+.nav-menu {
+  justify-content: space-between;
+}
+/* .nav-brand a {
+  font-size: 1.6rem;
+  padding: 1.6rem 18px;
+  /* padding-left: 193px; */
+  /* display: block;
+  font-family: var(--Abril);
+}   */ 
+.social {
+  padding: 2rem 0;
+}
+.nav-items {
+  display: flex;
+  margin: 0;
+}
+
+/* ---------------xxx---------Navigation Bar---------------xxx---------------- */
+/* ---------------------------------Main-Content------------------------------ */
+/* --------------------------------Site Title----------------------------- */
+.site-title {
+  background: url("../assets/20190909-baran-electrochemistry-920x500.jpeg"),
+    linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+  background-size: cover;
+  background-blend-mode: screen;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content {
+  align-self: center;
+  display: flex;
+  padding: 5rem 5rem;
+  padding-left: 4rem;
+  text-align: center;
+  width: 50%;
+  margin: 3rem 2rem;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  border-radius: 5em;
+  box-shadow: 0 15px 20px grey;
+}
+.title {
+  align-self: center;
+}
+.title h2,
+span {
+  color: black;
+  size: 4rem;
+}
+.content span {
+  display: block;
+}
+.content img {
+  border-radius: 50rem;
+  padding: 5rem;
+  width: 10rem;
+}
+
+.site-background {
+  padding-top: 10rem;
+  text-align: center;
+  color: var(--white);
+}
+.site-background h1,
+h3 {
+  margin: 0.3rem;
+}
+.btn {
+  margin: 1.8rem;
+  /* background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);; */
+  background-image: linear-gradient(
+    to right,
+    #e4afcb 0%,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #e2c58b 30%,
+    #c2ce9c 64%,
+    #7edbdc 100%
+  );
+}
+button.btn:hover {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+/* -----------------xxx------------Site Title---------------xxx----------- */
+/* --------------------------Blog-carousel------------------------------- */
+.blog {
+  background-image: linear-gradient(
+    42deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+}
+.blog-post {
+  padding-top: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 2rem;
+  box-shadow: 0 15px 20px grey;
+}
+.blog-content img {
+  height: 20rem;
+}
+.blog-title {
+  background-color: #f8f8f8;
+  padding: 2rem 0;
+}
+.btn-blog {
+  padding: 0.7rem 2rem;
+  background: var(--sky);
+  margin: 0.5rem;
+}
+.blog-title span {
+  display: block;
+}
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+  font-size: 25px;
+  color: var(--text-grey);
+  background: transparent;
+}
+button.owl-next {
+  font-size: 40px;
+}
+owl-theme .owl-nav[class*='owl-']{
+  outline: none;
+}
+
+/* ----------xxx-----------Blog-carousel--------------xxx------------- */
+
+/* Blog */
+.site-content{
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.post-image img{
+  padding: 4rem 4rem;
+  width: 40rem;
+  height: 40rem;
+}
+.post-content{
+  margin-bottom: 5rem;
+}
+.post-info i{
+  align-content: center;
+}
+
+
+
+
+/* Blog */
+/* -----------------xxx------------Main-Content-----------xxx---------------- */
+
+/* --------------View port less than 750px--------------- */
+@media only screen and (max-width: 750px) {
+  .nav-menu,
+  .nav-items {
+    flex-direction: column;
+  }
+  .toggle-collapse {
+    display: initial;
+  }
+}
+/* @media only screen and (max-width: 350px) { */
+/* .nav-brand { */
+/* padding-left: 80px; */
+/* } */
+/* } */
+
+/* ------xxx-----View port less than 750px-----xxx------- */
